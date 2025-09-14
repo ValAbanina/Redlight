@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Red Light Squared</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <p>Free Shipping on all orders over $100</p>
+        </div>
+        <div class="main-header">
+            <div class="logo">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Red Light Squared</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-section">
+                                <h4>Shop Categories</h4>
+                                <ul>
+                                    <li><a href="#therapy-devices">Therapy Devices</a></li>
+                                    <li><a href="#accessories">Accessories</a></li>
+                                    <li><a href="#kits">Our Kits</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>Resources & Info</h4>
+                                <ul>
+                                    <li><a href="blog.html">Blog Articles</a></li>
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li class="dropdown">
+                        <a href="#">More Info <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-section">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="reviews.html">Customer Reviews</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-icon"><i class="fas fa-user"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Products</span>
+            </div>
+            <h1>Explore Our Devices</h1>
+            <p>Discover premium red light therapy devices designed to enhance your wellness journey with cutting-edge technology.</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-filter">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Products</button>
+                    <button class="filter-tab" data-filter="beds">Therapy Beds</button>
+                    <button class="filter-tab" data-filter="panels">Panels</button>
+                    <button class="filter-tab" data-filter="wearables">Wearables</button>
+                    <button class="filter-tab" data-filter="accessories">Accessories</button>
+                </div>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Therapy Beds -->
+                <div class="product-card" data-category="beds" id="mito-booster">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Mito Booster XL Red Light Therapy Bed">
+                    <h3>Mito Booster XL I 6 Wavelength Red Light Bed</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>(128 reviews)</span>
+                    </div>
+                    <p class="price">$70,000</p>
+                    <p class="product-description">Professional-grade full-body red light therapy bed with 6 wavelengths for comprehensive treatment.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beds">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Red Light Therapy Bed Pro">
+                    <h3>Red Light Therapy Bed Pro</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span>(85 reviews)</span>
+                    </div>
+                    <p class="price">$45,000</p>
+                    <p class="product-description">Advanced therapy bed with dual wavelength technology for targeted treatments.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <!-- Panels -->
+                <div class="product-card" data-category="panels" id="panel">
+                    <div class="product-badge">New</div>
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop&crop=center" alt="Red Light Panel">
+                    <h3>Red Light Panel for Full Body Therapy</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>(247 reviews)</span>
+                    </div>
+                    <p class="price">$1,299</p>
+                    <p class="product-description">RDPRO1500 - High-intensity panel with precision wavelength control.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="panels">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Compact Panel">
+                    <h3>Compact Red Light Panel</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span>(156 reviews)</span>
+                    </div>
+                    <p class="price">$799</p>
+                    <p class="product-description">Perfect for home use with targeted therapy capabilities.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <!-- Wearables -->
+                <div class="product-card" data-category="wearables">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center" alt="Red Light Smart Watch">
+                    <h3>Red Light Therapy Smart Watch</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span>(92 reviews)</span>
+                    </div>
+                    <p class="price">$299</p>
+                    <p class="product-description">Portable red light therapy with smart monitoring features.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wearables">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop&crop=center" alt="Red Light Wrap">
+                    <h3>Flexible Red Light Therapy Wrap</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>(203 reviews)</span>
+                    </div>
+                    <p class="price">$199</p>
+                    <p class="product-description">Flexible wrap design for targeted treatment of specific areas.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="product-card" data-category="accessories">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center" alt="Protective Glasses">
+                    <h3>Red Light Therapy Protective Glasses</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>(67 reviews)</span>
+                    </div>
+                    <p class="price">$49</p>
+                    <p class="product-description">Essential eye protection for safe red light therapy sessions.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessories">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Timer Control">
+                    <h3>Smart Timer Control Unit</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span>(34 reviews)</span>
+                    </div>
+                    <p class="price">$89</p>
+                    <p class="product-description">Advanced timing control for optimal therapy sessions.</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-secondary">Quick View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Benefits -->
+    <section class="product-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expert-Approved Quality, Performance, and Results</h2>
+                <p>Our products are backed by scientific research and trusted by healthcare professionals worldwide.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Unmatched Quality and Performance in Therapy Devices</h3>
+                    <p>Premium materials and cutting-edge technology ensure superior performance and durability.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>User-Friendly Design for Effortless Navigation</h3>
+                    <p>Intuitive controls and smart features make every therapy session simple and effective.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Backed by Science for Proven Results</h3>
+                    <p>Clinically tested wavelengths and protocols deliver measurable health and wellness benefits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Reach Out for Personalized Quotes and Assistance</h3>
+                    <p>Transform your wellness routine with our cutting-edge Red Light Therapy solutions designed for everyone.</p>
+                    <div class="footer-actions">
+                        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#therapy-devices">Therapy Beds</a></li>
+                        <li><a href="#panels">Panels</a></li>
+                        <li><a href="#wearables">Wearables</a></li>
+                        <li><a href="#accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Shipping & Returns</a></li>
+                        <li><a href="contact.html">Warranty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="reviews.html">Testimonials</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <h3>Red Light Squared</h3>
+                </div>
+                <div class="footer-info">
+                    <div class="certifications">
+                        <span class="cert">CE</span>
+                        <span class="cert">ISO</span>
+                        <span class="cert">FDA</span>
+                        <span class="cert">RoHS</span>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Red Light Squared. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-widget">
+            <i class="fas fa-comments"></i>
+            <span>Chat</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active tab
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    productCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
